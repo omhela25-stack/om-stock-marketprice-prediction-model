@@ -496,6 +496,3 @@ models can be wrong. Not financial advice. Always perform independent due dilige
 <br><span class="badge">Data sources: Alpha Vantage, yfinance (fallback), or synthetic sample when unavailable.</span>
 </div>
 """, unsafe_allow_html=True)
-
-   
-
