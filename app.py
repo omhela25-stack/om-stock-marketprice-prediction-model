@@ -497,7 +497,10 @@ models can be wrong. Not financial advice. Always perform independent due dilige
 </div>
 """, unsafe_allow_html=True)
 
-            "Predicted": predicted_lr_inv.flatten()
-        })
-        st.line_chart(comparison_lr_df)
-        st.write(f"Linear Regression Mean Squared Error: {lr_mse:.4f}")
+      comparison_lr_df = pd.DataFrame({
+    "Actual": yte_lr_inv.flatten(),
+    "Predicted": predicted_lr_inv.flatten()
+})
+st.line_chart(comparison_lr_df)
+st.write(f"Linear Regression Mean Squared Error: {lr_mse:.4f}")
+
